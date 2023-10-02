@@ -6,14 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <script type="text/javascript">
-        function mudar(objeto, imagem){
-            lampada.src = imagem;
-        }
-    </script>
-    <a onmouseover="mudar('lampada', 'lampada.jpg')"
-    onmouseout="mudar('lampada', 'ascendeu.jpg')">
-    <img src="ascendeu.jpg" alt="" id="lampada"></a>
-</body>
+    <body>
+        <h1>Propriedades de ondas.</h1>
+            <h2>Tudo o que você precisa aprender.</h2>
+            <p>Ondas são perturbações que se deslocam no espaço transportando, exclusivamente, energia de um ponto a outro, sem realizar transporte de matéria. Existem ondas de natureza mecânica, eletromagnética e gravitacional. Quanto à sua propagação, podemos classificar três tipos de ondas: ondas unidimensionais, bidimensionais e tridimensionais. Quanto à direção de perturbação, são dividas em ondas transversais e longitudinais.</p>
+            <p>Independente de qual for a natureza, forma de propagação ou perturbação, todas as ondas apresentam as mesmas propriedades: frequência, comprimento de onda, amplitude, velocidade e período. A figura abaixo apresenta uma onda e seus elementos. Observe:
+        
+        <script type="text/javascript">
+            function mudar(objeto, imagem){
+                ondas.src = imagem;
+            }  
+        </script>
+            <a onmouseover="mudar('ondas', 'onda3.jpg')"
+                onmouseout="mudar('ondas', 'onda2.jpg')">
+            <img src="onda2.jpg" alt="" id="ondas"></a>
+
+        <li>
+            <ul><h1>Comprimento de onda</h1></ul>
+                <p>O comprimento de onda é representado pelo símbolo λ e equivale ao espaço que as ondas percorrem até que realizem uma oscilação completa. O comprimento de onda também é definido como a distância entre dois vales consecutivos, duas cristas consecutivas ou três nós consecutivos. Nós são posições do meio que permanecem em repouso durante a propagação da onda. No Sistema Internacional de Unidades (SI), o comprimento de ondas é uma grandeza definida em metros (m).</p>
+            <ul><h1>Frequência</h1></ul>
+                <p>A frequência da onda é dada pelo número de oscilações que ela realiza a cada segundo. No Sistema Internacional, essa grandeza é medida em s-1 (inverso de segundo), que é equivalente a hertz (Hz). Por exemplo: uma onda de 20 Hz realiza vinte oscilações completas a cada segundo.
+        </li>
+    </body>
 </html>
