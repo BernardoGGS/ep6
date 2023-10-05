@@ -21,7 +21,6 @@ body{
 
 .main{
     display: grid;
-    margin-left: 650px;
 }
 
 .pe{
@@ -34,4 +33,8 @@ body{
     background-color: white;
     margin: 10%;
     text-align: justify;
+}
+
+.fotos{
+    width: 50%;
 }
