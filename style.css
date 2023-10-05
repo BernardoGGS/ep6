@@ -1,14 +1,37 @@
-* {
+* {         
     padding: 0;
     margin: 0;
 }
 
+
+
 body{
-    background-color: whitesmoke;
+    background-color: grey;
+    font-size: x-large;
+    grid-template-rows: 
+    "cabe cabe cabe"
+    "main main main"
+    "pe pe pe";    
+}
+
+.cabe{
+    display: grid;
+    
+}
+
+.main{
+    display: grid;
+    margin-left: 650px;
+}
+
+.pe{
+    display: grid;
 }
 
 .Text1{
-    padding: 10%;
-    text-align: center;
-    justify-content: center;
+    padding: 1%;
+    border: solid black 3px;
+    background-color: white;
+    margin: 10%;
+    text-align: justify;
 }
