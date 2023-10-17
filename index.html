@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bernardo Bobão</title>
+    <title>Propriedades De Ondas</title>
     <link rel="stylesheet" href="style.css">
 </head>
-    <body>
+    <body onload="inclui_nome()">
+
+        <script src="script.js"></script>
+
+        <p id="marcacao_nome"></p>
+
         <div class="cabe">
             <nav class="Text1">
-            <h1>Propriedades de ondas do Bernardo Bobão</h1>
+            <h1>Propriedades de ondas</h1>
                 <h5>Tudo o que você precisa aprender.</h5><br>
                 <p>Ondas são perturbações que se deslocam no espaço transportando, exclusivamente, energia de um ponto a outro, sem realizar transporte de matéria. Existem ondas de natureza mecânica, eletromagnética e gravitacional. Quanto à sua propagação, podemos classificar três tipos de ondas: ondas unidimensionais, bidimensionais e tridimensionais. Quanto à direção de perturbação, são dividas em ondas transversais e longitudinais.</p>
                 <p>Independente de qual for a natureza, forma de propagação ou perturbação, todas as ondas apresentam as mesmas propriedades: frequência, comprimento de onda, amplitude, velocidade e período. A figura abaixo apresenta uma onda e seus elementos. Observe:</p><br>
@@ -50,8 +55,9 @@
                 
                 x: <input type="text" id="varx" value="0"> <br>
                 <button type="button" onclick="equacao1grau()">Calcular</button>
-        <div class="exercicios">       
-            <p>1. O som é a propagação de uma onda mecânica longitudinal que se propaga apenas em meios materiais. O som possui qualidades diversas que o ouvido humano normal é capaz de distinguir. Associe corretamente as qualidades fisiológicas do som apresentadas a seguir com as situações apresentadas logo abaixo.</p><br>
+        <div class="exercicios">
+                   
+            <h3>1. O som é a propagação de uma onda mecânica longitudinal que se propaga apenas em meios materiais. O som possui qualidades diversas que o ouvido humano normal é capaz de distinguir. Associe corretamente as qualidades fisiológicas do som apresentadas a seguir com as situações apresentadas logo abaixo.</h3><br>
             <h4>Qualidades fisiológicas</h4><br>
             <p>(1) Intensidade</p><br>
             <p>(2) Timbre</p><br>
@@ -70,13 +76,54 @@
             
             <h4>A sequência correta de preenchimento dos parênteses, de cima para baixo, é</h4><br>
             
-            <input type="radio"> a) 1 – 2 – 3 – 3 – 2 <br>
-            <input type="radio"> b) 1 – 3 – 2 – 2 – 3 <br>
-            <input type="radio"> c) 2 – 3 – 2 – 2 – 1 <br>
-            <input type="radio"> d) 3 – 2 – 1 – 1 – 2 <br>
-            <input type="radio"> e) 3 – 2 – 2 – 1 – 1 <br>
+                <input type="radio" name="resposta1" value="correta1"> a) 1 – 2 – 3 – 3 – 2 <br>
+                <input type="radio" name="resposta1" value="incorreta"> b) 1 – 3 – 2 – 2 – 3 <br>
+                <input type="radio" name="resposta1" value="incorreta"> c) 2 – 3 – 2 – 2 – 1 <br>
+                <input type="radio" name="resposta1" value="incorreta"> d) 3 – 2 – 1 – 1 – 2 <br>
+                <input type="radio" name="resposta1" value="incorreta"> e) 3 – 2 – 2 – 1 – 1 <br>
+                <p id="correta1" class="verde"></p><p id="incorreta" class="vermelho"></p><br>
+
+            <h3>2. Em viagens de avião, é solicitado aos passageiros o desligamento de todos os aparelhos cujo funcionamento envolva a emissão ou a recepção de ondas eletromagnéticas. O procedimento é utilizado para eliminar fontes de radiação que possam interferir nas comunicações via rádio dos pilotos com a torre de controle.</h3><br>
+            <h4>A propriedade das ondas emitidas que justifica o procedimento adotado é o fato de:</h4> <br>
+
+                <input type="radio" name="resposta2" value="incorreta">A) terem fases opostas. <br>
+                <input type="radio" name="resposta2" value="incorreta">B) serem ambas audíveis. <br>
+                <input type="radio" name="resposta2" value="incorreta">C) terem intensidades inversas. <br>
+                <input type="radio" name="resposta2" value="incorreta">D) serem de mesma amplitude. <br>
+                <input type="radio" name="resposta2" value="correta2">E) terem frequências próximas.<br>
+                <p id="correta2" class="verde"></p><p id="incorreta" class="vermelho"></p><br>
             
+            <h3>3. Radares são emissores e receptores de ondas de rádio e têm aplicações, por exemplo, na determinação de velocidades de veículos nas ruas e rodovias. Já os sonares são emissores e receptores de ondas sonoras, sendo utilizados no meio aquático para determinação da profundidade dos oceanos, localização de cardumes, entre outras aplicações.</h3><br>
+            <h4>Comparando as ondas emitidas pelos radares e pelos sonares, temos que:</h4><br>
+
+                <input type="radio" name="resposta3" value="incorreta">A) as ondas emitidas pelos radares são mecânicas e as ondas emitidas pelos sonares são eletromagnéticas.<br>
+                <input type="radio" name="resposta3" value="incorreta">B) ambas as ondas exigem um meio material para se propagarem e, quanto mais denso for esse meio, menores serão suas velocidades de propagação.<br>
+                <input type="radio" name="resposta3" value="incorreta">C) as ondas de rádio têm oscilações longitudinais e as ondas sonoras têm oscilações transversais.<br>
+                <input type="radio" name="resposta3" value="incorreta3">D) as frequências de oscilação de ambas as ondas não dependem do meio em que se propagam.<br>
+                <input type="radio" name="resposta3" value="incorreta">E) a velocidade de propagação das ondas dos radares pela atmosfera é menor do que a velocidade de propagação das ondas dos sonares pela água.<br>
+                <p id="correta3" class="verde"></p><p id="incorreta" class="vermelho"></p><br>
             
+            <h3>4. As ondas são formas de transferência de energia de uma região para outra. Existem ondas mecânicas — que precisam de meios materiais para se propagarem — e ondas eletromagnéticas — que podem se propagar tanto no vácuo como em alguns meios materiais. Sobre ondas, podemos afirmar corretamente que</h3><br>
+            
+                <input type="radio" name="resposta4" value="incorreta">A) a energia transferida por uma onda eletromagnética é diretamente proporcional à frequência dessa onda.<br>
+                <input type="radio" name="resposta4" value="incorreta">B) o som é uma espécie de onda eletromagnética e, por isso, pode ser transmitido de uma antena à outra, como ocorre nas transmissões de TV e rádio.<br>
+                <input type="radio" name="resposta4" value="incorreta">C) a luz visível é uma onda mecânica que somente se propaga de forma transversal.<br>
+                <input type="radio" name="resposta4" value="correta4">D) existem ondas eletromagnéticas que são visíveis aos olhos humanos, como o ultravioleta, o infravermelho e as micro-ondas.<br>
+                <input type="radio" name="resposta4" value="incorreta">E) o infrassom é uma onda eletromagnética com frequência abaixo da audível.<br>
+                <p id="correta4" class="verde"></p><p id="incorreta" class="vermelho"></p><br>
+
+            <h3>5. Uma fonte emite ondas sonoras de 200 Hz. A uma distância de 3400 m da fonte, está instalado um aparelho que registra a chegada das ondas através do ar e as remete de volta através de um fio metálico retilíneo. O comprimento dessas ondas no fio é 17 m. Qual o tempo de ida e volta das ondas?</h3><br>
+            <h4>Dado: velocidade do som no ar igual a 340 m/s.</h4>    <br>
+
+                <input type="radio" name="resposta5" value="incorreta">A) 11 s<br>
+                <input type="radio" name="resposta5" value="correta5">B) 17 s<br>
+                <input type="radio" name="resposta5" value="incorreta">C) 22 s<br>
+                <input type="radio" name="resposta5" value="incorreta">D) 34 s<br>
+                <input type="radio" name="resposta5" value="incorreta">E) 200 s<br>
+                <p id="correta5" class="verde"></p><p id="incorreta" class="vermelho"></p><br>
+
+                <p id="quantos_acertos"></p>
+                <button type="button" onclick="funcao_resposta()">Responder</button>
             </div>        
 
             </form>
