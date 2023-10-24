@@ -16,21 +16,20 @@ body{
 
 .cabe{
     display: grid;
-    border: solid black 3px;
 }
 
 .main{
     display: grid;
-    border: solid black 3px;
 }
 
 .pe{
     display: grid;
-    border: solid black 3px;
     text-align: center;
     margin: 5%;
     text-align: center;
     background-color: white;
+    padding: 2%;
+    border: solid 2px black;
 }
 
 .exercicios{

@@ -12,10 +12,10 @@ function inclui_nome() {
 
 function funcao_resposta(){
 
-    var resp1 = document.querySelector('input[name="quest_1"]:checked');
-    var resp2 = document.querySelector('input[name="quest_2"]:checked');
-    var resp3 = document.querySelector('input[name="quest_3"]:checked');
-    var resp4 = document.querySelector('input[name="quest_4"]:checked');
+    var resposta1 = document.querySelector('input[name="resposta1"]:checked');
+    var resposta2 = document.querySelector('input[name="resposta2"]:checked');
+    var resposta3 = document.querySelector('input[name="resposta3"]:checked');
+    var resposta4 = document.querySelec1tor('input[name="resposta4"]:checked');
 
     var contador = 0;
 
